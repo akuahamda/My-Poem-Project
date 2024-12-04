@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Project</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="mother">
-    <h1>My Poem Generator</h1>
-    <form id="form-element" class="instruction"> 
-        <input type="text" class="input-element" placeholder="Topic for the Poem" required>
-        <input type="submit" class="button">
-    </form>
-    <div class="poem" id="poem"></div>
-    <footer> 
-        This project is coded by Hamdala Mohammed and is an <a href="https://github.com/akuahamda/My-Poem-Project">open-source on Github</a> and is <a href="https://app.netlify.com/teams/akuahamda/sites">hosted on Netlify</a>
-    </footer>
-</div>
-<script src="index.js"></script>
-</body>
+      <h1>My Poem Generator</h1>
+
+    <div class="form-wrapper">
+        <form id="form-element" class="instruction">
+          <input
+            type="text"
+            class="input-element"
+            placeholder="Topic for the Poem"
+            required
+          />
+          <input type="submit" class="button" />
+        </form>
+        <small class="example">ie flower,paris</small>
+    </div>
+       
+
+      <div class="poem hidden" id="poem"></div>
+      <footer>
+        This project is coded by Hamdala Mohammed and is an
+        <a href="https://github.com/akuahamda/My-Poem-Project"
+          >open-source on Github</a
+        >
+        and is
+        <a href="https://app.netlify.com/teams/akuahamda/sites"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
